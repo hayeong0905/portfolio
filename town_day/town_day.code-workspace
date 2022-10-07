@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\webClass\\webTest\\fontawesome"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "town_day"
+	}
+}

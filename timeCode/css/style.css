@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{margin: 0; padding: 0;}
+ol,ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{border: 0;}
+body{font-family: Orbitron,sans-serif;}
+
+div#wrap{position: fixed; top: 0; left: 0; width: 100%; height: 100%; min-width: 1400px; min-height: 780px; background: url(../img/cherry-blossom-tree-1225186_1920.jpg) no-repeat center/cover;transition: all 2s;}
+
+/* 봄테마 */
+div#wrap.spring{background: url(../img/cherry-blossom-tree-1225186_1920.jpg) no-repeat center/cover;transition: all 2s;}
+div#wrap.spring h1{background-image:url(../img/hayeong_logo.png); width: 150px; height: 150px; filter: grayscale(#fff);}
+div#wrap.spring figure{background-image: url(../img/phone_spring.png);}
+div#wrap.spring article{width:500px; height:100px;background-color:rgb(184, 133, 226,.5);text-align: center;}
+div#wrap.spring article p{color:#fff;}
+div#wrap.spring article p strong{color:#fff;}
+div#wrap.spring article em{color:#fff; font-size: 16px;font-family: 'Noto Sans KR';}
+div#wrap.spring figure{margin-top:-70px;}
+div#wrap.spring figure p{margin-top:-80px;margin-left:-10px;color:rgb(161, 93, 216);font-size: 100px;}
+
+
+/* 여름테마 */
+div#wrap.summer{background:url(../img/beach-2413081_1920.jpg)no-repeat center/cover;transition: all 2s;}
+div#wrap.summer h1{background-image:url(../img/hayeong_logo.png);width: 150px; height: 150px;}
+div#wrap.summer figure{background-image: url(../img/phone_summer.png);}
+div#wrap.summer article{width:500px; height:100px;background-color:rgba(49, 187, 230, 0.5);text-align: center;
+margin-top: -100px;}
+div#wrap.summer article p{color:#fff;}
+div#wrap.summer article p strong{color:#fff;}
+div#wrap.summer article em{color:#fff; font-size: 16px;font-family: 'Noto Sans KR';}
+div#wrap.summer figure{margin-top:-170px;}
+div#wrap.summer figure p{margin-top:-70px;margin-left:10px;color:rgb(16, 85, 105);font-size: 100px;}
+
+/* 가을테마 */
+div#wrap.fall{background:url(../img/road-1072821_1920.jpg)no-repeat center/cover;transition: all 2s;;}
+div#wrap.fall h1{background-image:url(../img/hayeong_logo.png);width: 150px; height: 150px;}
+div#wrap.fall figure{background-image: url(../img/phone_fall.png);}
+div#wrap.fall article{width:500px; height:100px;background-color:rgba(202, 184, 125, 0.5);text-align: center;
+margin-top: 100px;}
+div#wrap.fall article p{color:#fff;}
+div#wrap.fall article p strong{color:#fff;}
+div#wrap.fall article em{color:#fff; font-size: 16px;font-family: 'Noto Sans KR';}
+div#wrap.fall figure{margin-top:40px;}
+div#wrap.fall figure p{margin-top:-70px;margin-left:10px;color:rgb(202, 184, 125);font-size: 100px;}
+
+
+/* 겨울테마 */
+div#wrap.winter{background:url(../img/snow-1964361_1920.jpg)no-repeat center/cover;transition: all 2s;;}
+div#wrap.winter h1{background-image:url(../img/hayeong_logo.png);width: 150px; height: 150px;}
+div#wrap.winter figure{background-image: url(../img/phone_winter.png);}
+div#wrap.winter article{width:500px; height:100px;background-color:rgba(3, 3, 3, 0.5);text-align: center;
+  margin-top: 10px;}
+div#wrap.winter article p{color:#fff}
+div#wrap.winter article p strong{color:#fff}
+div#wrap.winter article em{color:#fff}
+div#wrap.winter figure{margin-top:-50px;}
+div#wrap.winter figure p{margin-top:-70px;margin-left:-10px;color:rgb(3,3,3,.8);font-size: 100px;}
+
+
+
+div#wrap h1{width: 90px; height: 80px; position: fixed; top:30px; left: 60px; background: center/contain url(../img/logo_b.png) no-repeat;}
+
+div#wrap>img:nth-of-type(1){position: absolute; top:0px; left: -1146px; animation: ani1 110s linear infinite; opacity:.8;}
+div#wrap>img:nth-of-type(2){position: absolute; top:0px; left: 0; animation: ani2 100s linear infinite; opacity:.8;}
+
+figure p img.cl1{width: 600px; position: absolute; top:30px; left: -600px; animation: ani3 110s linear infinite; z-index: 4;}
+figure p img.cl2{width: 600px; position: absolute; top:20px; left: 0; animation: ani4 100s linear infinite; z-index: 4;}
+
+
+
+
+
+
+article{position: absolute; top:350px; left:150px; width: 450px;}
+article p{font-size: 50px; color:#666;}
+article p strong{color:#111;}
+article em{font-size: 14px; font-style: normal; color:#333;}
+
+figure{position: absolute; top:200px; right: -300px; width: 1226px; height: 809px; background-image:url(../img/phone_morning.png) ; transition: all 2s;}
+figure p{position: absolute; top:100px; left: 137px; width: 540px; height: 307px; overflow: hidden; font-size: 60px; font-weight: bold; color:#333; line-height: 4.6; box-sizing: border-box; padding-left: 50px;}
+figure p span{position: relative; z-index: 5;}
+
+nav {position: fixed; bottom:70px; left: 6%; width: 88%;}
+nav li{float: left; width: 25%;}
+nav li a{display: block; width:98%; height: 35px; background-color: #fff; color:#111; margin: 0 auto; box-sizing: border-box; padding-left: 30px; opacity:.6; z-index: 1; position: relative; line-height: 35px;}
+nav li:hover a{background-color: #111; color: #ddd; opacity: .9;}
+nav li.on a{background-color: #111; color: #ddd; opacity: .9;}

@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'PyeongChangPeace-Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: url(../img/cosmos-1853491_1920.jpg) center/cover ;
+}
+
+div#wrap {
+  width: 100%;
+  height: 100%;
+}
+
+div#wrap header {
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+div#wrap header h1 {
+  font-size: 60px;
+  font-family: 'PyeongChangPeace-Light';
+  color: #fff;
+  opacity: .7;
+
+}
+
+div#wrap header nav::after {
+  content: "";
+  display: block;
+  width: 290px;
+  height: 3px;
+  background-color: #7752F3;
+  position: absolute;
+  top: 100px;
+  right: 210px;
+}
+
+div#wrap header>img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 75px;
+  right: 530px;
+  rotate: 45deg;
+}
+
+div#wrap header nav ul.circle li {
+  cursor: pointer;
+  z-index: 10;
+}
+
+header nav ul.circle li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+div#wrap header nav ul.circle li:nth-child(1) {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #0DADD2;
+  position: absolute;
+  top: 94px;
+  right: 440px;
+}
+
+div#wrap header nav ul.circle li:nth-child(1):hover {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 92px;
+  right: 438px;
+  z-index: 15;
+}
+div#wrap header nav ul.circle li:nth-child(2) {
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: #2CA4E7;
+  position: absolute;
+  top: 94px;
+  right: 380px;
+}
+
+div#wrap header nav ul.circle li:nth-child(2):hover {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #2CA4E7;
+  position: absolute;
+  top: 92px;
+  right: 378px;
+}
+
+div#wrap header nav ul.circle li:nth-child(3){
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: #2CA4E7;
+  position: absolute;
+  top: 94px;
+  right: 318px;
+}
+div#wrap header nav ul.circle li:nth-child(3):hover {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #2CA4E7;
+  position: absolute;
+  top: 92px;
+  right: 318px;
+}
+
+div#wrap header nav ul.circle li:nth-child(4){
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 92px;
+  right: 255px;
+  border-radius: 20px;
+  background-color: #2CA4E7;
+}
+
+/* 메뉴(이미지) */
+div#wrap header nav ul.menu_img li img {
+  width: 30px;
+  height: 30px;
+}
+
+div#wrap header nav ul.menu_img li img:hover {
+  width: 40px;
+  height: 40px;
+}
+
+div#wrap header nav ul.menu_img li:nth-child(1) {
+  position: absolute;
+  top: 40px;
+  right: 432px;
+}
+
+div#wrap header nav ul.menu_img li:nth-child(2) {
+  position: absolute;
+  top: 38px;
+  right: 374px;
+}
+
+div#wrap header nav ul.menu_img li:nth-child(3){
+  position: absolute;
+  top: 40px;
+  right: 310px;
+}
+
+div#wrap header nav ul.menu_img li.contact img{
+  position: absolute;
+  top: 35px;
+  right: 245px;
+  width: 40px;
+  height: 40px;
+}
+
+section {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+section article.content dl {
+  position: relative;
+  margin-top: -200px;
+}
+
+section article.content dl dt {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgb(15, 189, 216, .7);
+  color: #fff;
+  float: left;
+  font-family: 'Raleway';
+  cursor: pointer;
+  outline: 1px solid black;
+}
+
+section article.content dl dt.on {
+  background-color: rgb(37, 234, 163, .7);
+  font-weight: bold;
+}
+
+
+section article.content dl dd {
+  width: 1200px;
+  height: 520px;
+  background: radial-gradient(ellipse at bottom, rgba(27, 39, 53,.8) 0%, rgba(9, 10, 15,.8) 100%) ;
+  margin-left: 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  color: #fff;
+  
+}
+
+section article.content dl dd.hidden {
+  display: none;
+}
+
+div.contact ul.img_list li {
+  float: left;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+div.contact ul.img_list li:not(:first-child) {
+  margin-left: 180px;
+}
+
+div.contact ul.img_list li img {
+  width: 180px;
+  height: 180px;
+}
+
+div.contact ul.list li{
+  float: left;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  text-decoration: underline;
+}
+div.contact ul.list li:nth-child(1){
+  margin-top: 70px;
+  margin-left: 100px;
+}
+div.contact ul.list li:nth-child(2){
+  margin-top: 70px;
+  margin-left: 180px;
+}
+div.contact ul.list li:nth-child(3){
+  margin-top: 70px;
+  margin-left: 190px;
+}
