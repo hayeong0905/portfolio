@@ -483,18 +483,6 @@ div.title h3 {
   font-weight: 300;
 }
 
-
-body::after {
-  content: "";
-  display: block;
-  width: 5px;
-  background-color: rgb(95, 145, 255,.5);
-  height: 300px;
-  position: absolute;
-  bottom: 0px;
-  right: 27%;
-}
-
 ul.menu li.menu1 {
   position: absolute;
   top: 63%;
@@ -516,7 +504,7 @@ ul.menu li.menu1 {
 
 ul.menu li.menu2 {
   position: absolute;
-  top: 72%;
+  top: 71%;
   right: 24%;
   background-color: #3F82E3;
   color: #fff;
@@ -538,7 +526,7 @@ ul.menu li.menu2:hover {
 
 ul.menu li.menu3 {
   position: absolute;
-  top: 81%;
+  top: 79%;
   right: 24%;
   background-color: #5A6BEA;
   font-family: 'Raleway';
@@ -560,7 +548,7 @@ ul.menu li.menu3:hover {
 
 ul.menu li.menu4 {
   position: absolute;
-  top: 90%;
+  top: 87%;
   right: 24%;
   background-color: #7752F3;
   font-family: 'Raleway';
@@ -586,7 +574,7 @@ ul.menu_img li.menu_img1 img {
   height: 50px;
   position: absolute;
   top: 62%;
-  right: 31.5%;
+  right: 30.5%;
 }
 
 ul.menu_img li.menu_img2 img {
@@ -594,8 +582,8 @@ ul.menu_img li.menu_img2 img {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 72%;
-  right: 32%;
+  top: 71%;
+  right: 31%;
 }
 
 ul.menu_img li.menu_img2 img:hover {
@@ -603,8 +591,8 @@ ul.menu_img li.menu_img2 img:hover {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 72%;
-  right: 31.8%;
+  top: 71%;
+  right: 30.8%;
 }
 
 ul.menu_img li.menu_img3 img {
@@ -612,8 +600,8 @@ ul.menu_img li.menu_img3 img {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 81%;
-  right: 32%;
+  top: 79%;
+  right: 31%;
 }
 
 ul.menu_img li.menu_img3 img:hover {
@@ -621,8 +609,8 @@ ul.menu_img li.menu_img3 img:hover {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 81%;
-  right: 31.8%;
+  top: 79%;
+  right: 30.8%;
 }
 
 ul.menu_img li.menu_img4 img {
@@ -630,8 +618,8 @@ ul.menu_img li.menu_img4 img {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 90%;
-  right: 32%;
+  top: 87%;
+  right: 31%;
 }
 
 ul.menu_img li.menu_img4 img:hover {
@@ -639,8 +627,8 @@ ul.menu_img li.menu_img4 img:hover {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 90%;
-  right: 31.8%;
+  top: 87%;
+  right: 30.8%;
 }
 
 div.rocket img {
