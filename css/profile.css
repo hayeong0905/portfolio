@@ -1,3 +1,4 @@
+/* 기본설정 */
 @charset "utf-8";
 
 @font-face {
@@ -26,9 +27,9 @@ div#wrap {
   width: 100%;
   height: 100%;
 }
-
+/* 헤더 */
 div#wrap header {
-  width: 1200px;
+  width: 1300px;
   height: 350px;
   margin: 0 auto;
 }
@@ -89,9 +90,19 @@ div#wrap header nav ul.circle li:nth-child(1):hover {
   top: 92px;
   right: 438px;
   z-index: 15;
+  content: "Home";
+}
+div#wrap header nav ul.circle li:nth-child(2) {
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: #2CA4E7;
+  position: absolute;
+  top: 94px;
+  right: 380px;
 }
 
-div#wrap header nav ul.circle li:nth-child(2) {
+div#wrap header nav ul.circle li:nth-child(2):hover {
   width: 20px;
   height: 20px;
   border-radius: 20px;
@@ -99,23 +110,13 @@ div#wrap header nav ul.circle li:nth-child(2) {
   position: absolute;
   top: 92px;
   right: 378px;
-
 }
 
-div#wrap header nav ul.circle li:nth-child(3) {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  background-color: #3F82E3;
-  position: absolute;
-  top: 94px;
-  right: 320px;
-
-}
-
-div#wrap header nav ul.circle li:nth-child(3):hover {
+div#wrap header nav ul.circle li:nth-child(3){
   width: 20px;
   height: 20px;
+  border-radius: 20px;
+  background-color: #2CA4E7;
   position: absolute;
   top: 92px;
   right: 318px;
@@ -157,18 +158,18 @@ div#wrap header nav ul.menu_img li:nth-child(1) {
   right: 432px;
 }
 
-div#wrap header nav ul.menu_img li.pro img {
+div#wrap header nav ul.menu_img li:nth-child(2) {
   position: absolute;
   top: 38px;
-  right: 368px;
-  width: 40px;
-  height: 40px;
+  right: 374px;
 }
 
-div#wrap header nav ul.menu_img li:nth-child(3) {
+div#wrap header nav ul.menu_img li.port img{
   position: absolute;
-  top: 43px;
-  right: 312px;
+  top: 35px;
+  right: 308px;
+  width: 40px;
+  height: 40px;
 }
 
 div#wrap header nav ul.menu_img li:nth-child(4) {
@@ -182,9 +183,9 @@ div#wrap header nav ul.menu_img li:nth-child(5) {
   top: 40px;
   right: 222px;
 }
-
+/* 콘텐츠 */
 section {
-  width: 1200px;
+  width: 1300px;
   margin: 0 auto;
 }
 
@@ -194,7 +195,7 @@ section article.content dl {
 }
 
 section article.content dl dt {
-  width: 100px;
+  width: 150px;
   height: 40px;
   line-height: 40px;
   text-align: center;
@@ -207,520 +208,160 @@ section article.content dl dt {
 }
 
 section article.content dl dt.on {
-  background-color: rgb(37, 234, 163, .7);
+  background-color: rgba(226, 155, 211, 0.7);
   font-weight: bold;
 }
 
 
 section article.content dl dd {
-  width: 1200px;
+  width: 1300px;
   height: 520px;
   background: radial-gradient(ellipse at bottom, rgba(27, 39, 53,.8) 0%, rgba(9, 10, 15,.8) 100%) ;
   margin-left: 0;
   position: absolute;
   top: 40px;
   left: 0;
+  overflow: hidden;
   color: #fff;
-  
-}
-
-section article.content div.about_me img {
-  width: 420px;
-  height: 420px;
-  margin: 50px 80px;
-  opacity: .9;
-  float: left;
-  
-}
-
-section article.content div.about_me table {
-  width: 540px;
-  height: 450px;
-  margin-left: 600px;
-  padding-top: 30px;
-  font-family: 'Noto Sans KR';
-  font-size: 14.5px;
-}
-
-section article.content div.about_me table th {
-  color: #fff;
-  text-align: left;
-}
-
-section article.content div.about_me table td {
-  color: #fff;
-  text-align: left;
-  padding-left: 40px;
 }
 
 section article.content dl dd.hidden {
-  position: absolute;
-  top: 40px;
-  left: 0;
   display: none;
 }
-
-section article.content div.skills {
+div.content h2 {
+  font-family: 'Raleway';
+  color: #fff;
+  margin-left: 90px;
+  margin-top: 40px;
+}
+div.swiper-container1 div.content div.screen {
+  width: calc(1920px/3.2);
+  height: calc(1080px/3.2);
+  margin-left: 90px;
+  margin-top: 40px;
+  overflow: auto;
+}
+div.swiper-container1 div.content div.screen img{
+  width: 100%;
+  object-fit: cover;
+  object-fit:contain;
+}
+div.content div.cont_box {
+  width: 430px;
+  height: 420px;
+  margin-top: -400px;
+  margin-left: 720px;
+  
+}
+div.content div.cont_box h3 {
+  padding: 30px;
+  font-family: 'Noto Sans KR';
+  font-size: 16px;
+}
+div.content div.cont_box p {
+  font-family: 'Noto Sans KR';
   margin-top: -30px;
-}
-
-section article.content div.skills div.programming h3 {
-  color: #fff;
-  font-family: 'Raleway';
-  padding: 30px;
+  margin-left: 30px;
+  width: 430px; 
+  height: 100px;
+  line-height: 2;
   font-size: 16px;
+  
 }
-
-section article.content div.skills div.programming ul li {
-  margin-top: -20px;
-  float: left;
-}
-
-section article.content div.skills div.programming ul li:not(:first-child) {
-  margin-left: 20px;
-}
-
-section article.content div.skills div.programming ul img {
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-
-section article.content div.skills div.design {
-  margin-top: 100px;
-}
-
-section article.content div.skills div.design h3 {
-  color: #fff;
-  font-family: 'Raleway';
-  padding: 30px;
-  font-size: 16px;
-}
-
-section article.content div.skills div.design ul li {
-  margin-top: -20px;
-  float: left;
-}
-
-section article.content div.skills div.design ul li:not(:first-child) {
-  margin-left: 20px;
-}
-
-section article.content div.skills div.design ul img {
-  width: 50px;
-  height: 50px;
-}
-
-section article.content div.skills div.design ul img {
-  width: 50px;
-  height: 50px;
-}
-
-section article.content div.skills div.design ul li {
-  margin-top: -20px;
-  float: left;
-}
-
-section article.content div.skills div.design ul li:not(:first-child) {
-  margin-left: 20px;
-}
-
-section article.content div.skills div.video_edit {
-  margin-top: 100px;
-}
-
-section article.content div.skills div.video_edit h3 {
-  color: #fff;
-  font-family: 'Raleway';
-  padding: 30px;
-  font-size: 16px;
-}
-
-section article.content div.skills div.video_edit ul li {
-  margin-top: -20px;
-  float: left;
-}
-
-section article.content div.skills div.video_edit ul li:not(:first-child) {
-  margin-left: 20px;
-}
-
-section article.content div.skills div.video_edit ul img {
-  width: 50px;
-  height: 50px;
-}
-
-section article.content div.skills div.office {
-  margin-left: 500px;
-  margin-top: -472px;
-  float: left;
-}
-
-section article.content div.skills div.office h3 {
-  color: #fff;
-  font-family: 'Raleway';
-  padding: 30px;
-  font-size: 16px;
-}
-
-section article.content div.skills div.office ul li {
-  margin-top: -20px;
-  float: left;
-}
-
-section article.content div.skills div.office ul li:not(:first-child) {
-  margin-left: 20px;
-}
-
-section article.content div.skills div.office ul img {
-  width: 50px;
-  height: 50px;
-}
-
-section article.content div.skills div.others {
-  margin-left: 500px;
-  margin-top: -300px;
-  float: left;
-}
-
-section article.content div.skills div.others h3 {
-  color: #fff;
-  font-family: 'Raleway';
-  padding: 30px;
-  font-size: 16px;
-}
-
-section article.content div.skills div.others ul li {
-  margin-top: -20px;
-  float: left;
-}
-
-section article.content div.skills div.others ul li:not(:first-child) {
-  margin-left: 20px;
-}
-
-section article.content div.skills div.others ul img {
-  width: 50px;
-  height: 50px;
-}
-
-section article.content div.skills div.langueges {
-  margin-left: 500px;
-  margin-top: -120px;
-  float: left;
-}
-
-section article.content div.skills div.langueges h3 {
-  color: #fff;
-  font-family: 'Raleway';
-  padding: 30px;
-  font-size: 16px;
-}
-
-section article.content div.skills div.langueges ul li {
-  margin-top: -20px;
-  float: left;
-}
-
-section article.content div.skills div.langueges ul li:not(:first-child) {
-  margin-left: 20px;
-}
-
-section article.content div.skills div.langueges ul img {
-  width: 50px;
-  height: 50px;
-}
-
-div.programming ul li:nth-child(1):hover:after {
-  content: "HTML: 대부분의 화면구현이 가능하고 다소 복잡한 기능은 인터넷 검색을 통해 구현 가능";
-  position: absolute;
-  top: 26%;
-  left: 2%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
+div.content div.cont_box div>a{
+  width: 120px;
+  height: 40px;
+  background-color: rgb(0, 0, 0,.5);
+  border: 1px solid #fff;
+  line-height: 40px;
+  text-align: center;
   font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
+  margin-top: 200px;
+  margin-left: 180px;
+  float: left; 
+  border-radius: 20px;
+  font-size: 14px;
+}
+div.content div.cont_box div:hover {
+  font-weight: bold;
+  color: #7752F3;
+  background-color: rgb(255, 255, 255, .3);
 }
 
-div.programming ul li:nth-child(2):hover:after {
-  content: "CSS: 대부분의 화면구현이 가능하고 다소 복잡한 기능은 인터넷 검색을 통해 구현 가능";
-  position: absolute;
-  top: 26%;
-  left: 2%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
+div.swiper-container2 div.content div.screen {
+  width: calc(1920px/3.2);
+  height: calc(1080px/3.2);
+  margin-left: 100px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+div.swiper-container2 div.content div.screen img{
+  width: calc(1920px/3.2);
+  height: calc(1080px/3.2);
+  object-fit: cover;
+  object-fit:contain;
+}
+div.swiper-container2 div.cont_box h3{
+  font-size: 18px;
+}
+div.swiper-container2 div.cont_box p{
   font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
 }
 
-div.programming ul li:nth-child(3):hover:after {
-  content: "Java Script: 기본적인 문법을 숙지하고 있으며 웹페이지에 필요한 동작 구현이 가능";
-  position: absolute;
-  top: 26%;
-  left: 2%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
+div.swiper-container3 div.content div.screen {
+  width: calc(1920px/3.2);
+  height: calc(1080px/3.2);
+  margin-left: 100px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+div.swiper-container3 div.content div.screen img{
+  width: calc(1920px/3.2);
+  height: calc(1080px/3.2);
+  /* object-fit: cover;
+  object-fit:contain; */
 }
 
-div.programming ul li:nth-child(4):hover:after {
-  content: "Python: 기본적인 문법을 숙지하고 있으며 간단한 게시판을 작성 가능";
-  position: absolute;
-  top: 26%;
-  left: 2%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
+dd.hidden div.content div.cont_box div:hover {
+  font-weight: bold;
+  color: #7752F3;
+  background-color: rgb(255, 255, 255, .3);
 }
 
-div.programming ul li:nth-child(5):hover:after {
-  content: "PHP: 기본적인 문법을 숙지하고 있으며 간단한 폼을 작성 가능";
-  position: absolute;
-  top: 26%;
-  left: 2%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
+
+/* 스와이퍼 */
+div.swiper-container1 div.swiper-slide a {
+  display: block;
+  width: 300px;
+  height: 600px;
+  line-height: 600px;
 }
 
-div.programming ul li:nth-child(6):hover:after {
-  content: "Jquery: 기본적인 문법을 숙지하고 있으며 웹페이지에 필요한 동작 구현이 가능";
-  position: absolute;
-  top: 26%;
-  left: 2%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
+div.swiper-container2 div.swiper-slide a {
+  display: block;
+  width: 300px;
+  height: 600px;
+  line-height: 600px;
 }
 
-div.programming ul li:nth-child(7):hover:after {
-  content: "Sass: 기본적인 문법을 숙지하고 있음";
-  position: absolute;
-  top: 26%;
-  left: 2%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
+div.swiper-container3 div.swiper-slide a {
+  display: block;
+  width: 300px;
+  height: 600px;
+  line-height: 600px;
 }
 
-div.design ul li:nth-child(1):hover:after {
-  content: "Adobe Photoshop: 사진 편집 및 보정이 가능하며 배너 및 팝업을 제작 가능";
-  position: absolute;
-  top: 60%;
-  left: 2%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
+div.swiper-button-next,
+div.swiper-button-prev {
+  top: 260px;
 }
 
-div.design ul li:nth-child(2):hover:after {
-  content: "Adobe Illustrator: 일러스트를 그릴 수 있으며 배너 및 팝업을 제작 가능";
-  position: absolute;
-  top: 60%;
-  left: 2%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
+footer{
+  text-align: center;
   color: #fff;
-  z-index: 100;
-  padding: 5px;
+  font-size: 10px;
+  position: absolute; bottom: 0; left: 45%;
+  width: 300px; height: 30px;
+  
 }
 
-div.design ul li:nth-child(3):hover:after {
-  content: "Adobe Indesign: 기본적인 문서 작성이 가능";
-  position: absolute;
-  top: 60%;
-  left: 2%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
-}
-
-div.design ul li:nth-child(4):hover:after {
-  content: "Adobe XD: 웹페이지를 디자인 할 수 있으며 인터랙션 효과를 적용 가능";
-  position: absolute;
-  top: 60%;
-  left: 2%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
-}
-
-div.video_edit ul li:nth-child(1):hover:after {
-  content: "Adobe Premiere Pro : 기본적인 컷편집 및 자막 편집이 가능";
-  position: absolute;
-  top: 85%;
-  left: 18%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
-}
-
-div.video_edit ul li:nth-child(2):hover:after {
-  content: "Adobe After Effects: 기본적인 효과를 적용 가능";
-  position: absolute;
-  top: 85%;
-  left: 18%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
-}
-
-div.office ul li:nth-child(1):hover:after {
-  content: "MS Word: 대부분의 문서작성이 가능";
-  position: absolute;
-  top: 26%;
-  left: 57%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
-}
-
-div.office ul li:nth-child(2):hover:after {
-  content: "MS Excel: 기본적인 문서작성과 함수 사용이 가능";
-  position: absolute;
-  top: 26%;
-  left: 57%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
-}
-
-div.office ul li:nth-child(3):hover:after {
-  content: "MS Powerpoint: 대부분의 PPT 작성이 가능";
-  position: absolute;
-  top: 26%;
-  left: 57%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
-}
-
-div.others ul li:nth-child(1):hover:after {
-  content: "Blender: 기본적인 3D 모델링이 가능 ";
-  position: absolute;
-  top: 60%;
-  left: 57%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
-}
-
-div.others ul li:nth-child(2):hover:after {
-  content: "Unity: 기본적인 게임 애니메이션을 구현 가능";
-  position: absolute;
-  top: 60%;
-  left: 57%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
-}
-
-div.langueges ul li:nth-child(1):hover:after {
-  content: "일본어: 전문적인 통번역이 가능";
-  position: absolute;
-  top: 85%;
-  left: 75%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
-}
-
-div.langueges ul li:nth-child(2):hover:after {
-  content: "영어: 기본적인 회화와 작문이 가능";
-  position: absolute;
-  top: 85%;
-  left: 75%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
-}
-
-div.langueges ul li:nth-child(3):hover:after {
-  content: "중국어: 기초회화가 가능";
-  position: absolute;
-  top: 85%;
-  left: 75%;
-  outline: 1px double #7752F3;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: 'Noto Sans KR';
-  color: #fff;
-  z-index: 100;
-  padding: 5px;
-}
