@@ -29,7 +29,7 @@ div#wrap {
 }
 /* 헤더 */
 div#wrap header {
-  width: 1200px;
+  width: 1300px;
   height: 350px;
   margin: 0 auto;
 }
@@ -185,7 +185,7 @@ div#wrap header nav ul.menu_img li:nth-child(5) {
 }
 /* 콘텐츠 */
 section {
-  width: 1200px;
+  width: 1300px;
   margin: 0 auto;
 }
 
@@ -214,7 +214,7 @@ section article.content dl dt.on {
 
 
 section article.content dl dd {
-  width: 1200px;
+  width: 1300px;
   height: 520px;
   background: radial-gradient(ellipse at bottom, rgba(27, 39, 53,.8) 0%, rgba(9, 10, 15,.8) 100%) ;
   margin-left: 0;
@@ -247,8 +247,8 @@ div.swiper-container1 div.content div.screen img{
   object-fit:contain;
 }
 div.content div.cont_box {
-  width: 380px;
-  height: 430px;
+  width: 430px;
+  height: 420px;
   margin-top: -400px;
   margin-left: 720px;
   
@@ -262,13 +262,13 @@ div.content div.cont_box p {
   font-family: 'Noto Sans KR';
   margin-top: -30px;
   margin-left: 30px;
-  width: 350px; 
+  width: 430px; 
   height: 100px;
   line-height: 2;
-  font-size: 14px;
+  font-size: 16px;
   
 }
-div.swiper-container1 div.content div.cont_box div>a{
+div.content div.cont_box div>a{
   width: 120px;
   height: 40px;
   background-color: rgb(0, 0, 0,.5);
@@ -276,8 +276,8 @@ div.swiper-container1 div.content div.cont_box div>a{
   line-height: 40px;
   text-align: center;
   font-family: 'Noto Sans KR';
-  margin-top: 280px;
-  margin-left: 20px;
+  margin-top: 200px;
+  margin-left: 180px;
   float: left; 
   border-radius: 20px;
   font-size: 14px;
@@ -287,9 +287,7 @@ div.content div.cont_box div:hover {
   color: #7752F3;
   background-color: rgb(255, 255, 255, .3);
 }
-div.content div.cont_box div:not(:first-child) {
-  margin-left: 50px;
-}
+
 div.swiper-container2 div.content div.screen {
   width: calc(1920px/3.2);
   height: calc(1080px/3.2);
@@ -309,20 +307,7 @@ div.swiper-container2 div.cont_box h3{
 div.swiper-container2 div.cont_box p{
   font-size: 16px;
 }
-div.swiper-container2 div.content div.cont_box div>a{
-  width: 120px;
-  height: 40px;
-  background-color: rgb(0, 0, 0,.5);
-  border: 1px solid #fff;
-  line-height: 40px;
-  text-align: center;
-  font-family: 'Noto Sans KR';
-  margin-top: 180px;
-  margin-left: 90px;
-  float: left; 
-  border-radius: 20px;
-  font-size: 14px;
-}
+
 div.swiper-container3 div.content div.screen {
   width: calc(1920px/3.2);
   height: calc(1080px/3.2);
@@ -337,46 +322,13 @@ div.swiper-container3 div.content div.screen img{
   object-fit:contain; */
 }
 
-div.swiper-container1 div.content div.cont_box div>a{
-  width: 120px;
-  height: 40px;
-  background-color: rgb(0, 0, 0,.5);
-  border: 1px solid #fff;
-  line-height: 40px;
-  text-align: center;
-  font-family: 'Noto Sans KR';
-  margin-top: 180px;
-  margin-left: 20px;
-  float: left; 
-  border-radius: 20px;
-  font-size: 14px;
-}
-div.swiper-container3 div.content div.cont_box div>a{
-  width: 120px;
-  height: 40px;
-  background-color: rgb(0, 0, 0,.5);
-  border: 1px solid #fff;
-  line-height: 40px;
-  text-align: center;
-  font-family: 'Noto Sans KR';
-  margin-top: 180px;
-  margin-left: 90px;
-  float: left; 
-  border-radius: 20px;
-  font-size: 14px;
-}
 dd.hidden div.content div.cont_box div:hover {
   font-weight: bold;
   color: #7752F3;
   background-color: rgb(255, 255, 255, .3);
 }
 
-div.swiper-container3 div.cont_box h3{
-  font-size: 18px;
-}
-div.swiper-container3 div.cont_box p{
-  font-size: 16px;
-}
+
 /* 스와이퍼 */
 div.swiper-container1 div.swiper-slide a {
   display: block;
