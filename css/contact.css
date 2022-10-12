@@ -28,7 +28,7 @@ div#wrap {
 }
 
 div#wrap header {
-  width: 1200px;
+  width: 1300px;
   height: 350px;
   margin: 0 auto;
 }
@@ -177,7 +177,7 @@ div#wrap header nav ul.menu_img li.contact img{
 }
 
 section {
-  width: 1200px;
+  width: 1300px;
   margin: 0 auto;
 }
 
@@ -206,7 +206,7 @@ section article.content dl dt.on {
 
 
 section article.content dl dd {
-  width: 1200px;
+  width: 1300px;
   height: 520px;
   background: radial-gradient(ellipse at bottom, rgba(27, 39, 53,.8) 0%, rgba(9, 10, 15,.8) 100%) ;
   margin-left: 0;
@@ -221,8 +221,8 @@ section article.content dl dd.hidden {
   display: none;
 }
 ul.img_list{
-  margin-top: 200px;
-  margin-left: 120px;
+  margin-top: 180px;
+  margin-left: 170px;
   width:1200px; height: 100px;
 }
 ul.img_list li{
@@ -242,7 +242,7 @@ ul.list{
   font-size: 20px;
   text-decoration: underline;
   width: 1200px; height: 50px;
-  margin-left: 130px;
+  margin-left: 175px;
 }
 ul.list li{
   float: left;
