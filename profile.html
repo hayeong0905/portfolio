@@ -1,140 +1,726 @@
-<!DOCTYPE html>
-<html lang="ko">
+@charset "utf-8";
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="js/custom.js" defer></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="css/profile.css">
-  <title>Profile</title>
-</head>
+@font-face {
+  font-family: 'PyeongChangPeace-Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
 
-<body>
-  <div id="wrap">
-    <header>
-      <h1>Profile</h1>
-      <img src="img/rocket.png" alt="rocket">
-      <nav>
-        <ul class="circle">
-          <li><a href="index.html"></a></li>
-          <li><a href="profile.html"></a></li>
-          <li><a href="portfolio.html"></a></li>
-          <li><a href="contact.html"></a></li>
-        </ul>
-        <ul class="menu_img">
-          <li><a href="index.html"><img src="img/home.png" alt="home"></a></li>
-          <li class="pro"><a href="profile.html"><img src="img/user.png" alt="profile"></a></li>
-          <li><a href="portfolio.html"><img src="img/programming.png" alt="Portfolio"></a></li>
-          <li><a href="contact.html"><img src="img/email.png" alt="contact"></a></li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <article class="content">
-        <dl>
-          <dt class="on">About me</dt>
-          <dd>
-            <div class="about_me">
-              <img src="img/hayeong.png" alt="me">
-              <table>
-                <tr>
-                  <th>NAME</th>
-                  <td>임하영(Hayeong Lim, 林夏映)</td>
-                </tr>
-                <tr>
-                  <th>BIRTH</th>
-                  <td>1994.09.05</td>
-                </tr>
-                <tr>
-                  <th>EDUCATION</th>
-                  <td>2017.03&nbsp;&nbsp;&nbsp;도쿄공과대학 미디어학부 졸업</td>
-                </tr>
-                <tr>
-                  <th></th>
-                  <td>
-                    2021.03&nbsp;&nbsp;&nbsp;디지털할리우드대학원<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;디지털콘텐츠매니지먼트연구과
-                    졸업
-                  </td>
-                <tr>
-                  <th></th>
-                  <td>2022.10&nbsp;&nbsp;&nbsp;세잔IT직업전문학교
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;웹디자인&멀티미디어콘텐츠제작과정
-                    수료
-                  </td>
-                </tr>
-                <tr>
-                  <th>CERTIFICATE</th>
-                  <td>2018.09&nbsp;&nbsp; 일본어능력시험(JLPT) N1</td>
-                </tr>
-                <tr>
-                  <th></th>
-                  <td>2022.09&nbsp;&nbsp; 웹디자인기능사</td>
-                </tr>
-              </table>
-            </div>
-          </dd>
-          <dt>Skills</dt>
-          <dd class="hidden">
-            <div class="skills">
-              <div class="programming">
-                <h3>PROGRAMMING</h3>
-                <ul>
-                  <li><img src="img/html.png" alt="html"></li>
-                  <li><img src="img/css.png" alt="css"></li>
-                  <li><img src="img/js.png" alt="js"></li>
-                  <li><img src="img/python.png" alt="python"></li>
-                  <li><img src="img/php.png" alt="php"></li>
-                  <li><img src="img/jquery.png" alt="jquery"></li>
-                  <li><img src="img/sass.png" alt="sass"></li>
-                </ul>
-              </div>
-              <div class="design">
-                <h3>DESIGN</h3>
-                <ul class="design">
-                  <li><img src="img/photoshop.png" alt="photoshop"></li>
-                  <li><img src="img/illustrator.png" alt="illustrator"></li>
-                  <li><img src="img/indesign (1).png" alt="indesign"></li>
-                  <li><img src="img/xd.png" alt="python"></li>
-                </ul>
-              </div>
-              <div class="video_edit">
-                <h3>VIDEO EDITOR</h3>
-                <ul>
-                  <li><img src="img/premiere-pro.png" alt="premiere-pro"></li>
-                  <li><img src="img/after-effects.png" alt="after-effects"></li>
-                </ul>
-              </div>
-              <div class="office">
-                <h3>OFFICE</h3>
-                <ul>
-                  <li><img src="img/word.png" alt="word"></li>
-                  <li><img src="img/excel.png" alt="excel"></li>
-                  <li><img src="img/powerpoint.png" alt="powerpoint"></li>
-                </ul>
-              </div>
-              <div class="others">
-                <h3>OTHERS</h3>
-                <ul>
-                  <li><img src="img/blender.png" alt="blender"></li>
-                  <li><img src="img/unity.png" alt="unity"></li>
-                </ul>
-              </div>
-              <div class="langueges">
-                <h3>LANGUEGES</h3>
-                <ul>
-                  <li><img src="img/japan.png" alt="japanese"></li>
-                  <li><img src="img/united-kingdom.png" alt="english"></li>
-                  <li><img src="img/china.png" alt="chinese"></li>
-                </ul>
-              </div>
-            </div>
-          </dd>
-        </dl>
-      </article>
-    </section>
-</body>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-</html>
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: url(../img/cosmos-1853491_1920.jpg) center/cover ;
+}
+
+div#wrap {
+  width: 100%;
+  height: 100%;
+}
+
+div#wrap header {
+  width: 1300px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+div#wrap header h1 {
+  font-size: 60px;
+  font-family: 'PyeongChangPeace-Light';
+  color: #fff;
+  opacity: .7;
+
+}
+
+div#wrap header nav::after {
+  content: "";
+  display: block;
+  width: 290px;
+  height: 3px;
+  background-color: #7752F3;
+  position: absolute;
+  top: 100px;
+  right: 210px;
+}
+
+div#wrap header>img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 75px;
+  right: 530px;
+  rotate: 45deg;
+}
+
+div#wrap header nav ul.circle li {
+  cursor: pointer;
+  z-index: 10;
+}
+
+header nav ul.circle li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+div#wrap header nav ul.circle li:nth-child(1) {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #0DADD2;
+  position: absolute;
+  top: 94px;
+  right: 440px;
+}
+
+div#wrap header nav ul.circle li:nth-child(1):hover {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 92px;
+  right: 438px;
+  z-index: 15;
+}
+
+div#wrap header nav ul.circle li:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #2CA4E7;
+  position: absolute;
+  top: 92px;
+  right: 378px;
+
+}
+
+div#wrap header nav ul.circle li:nth-child(3) {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #3F82E3;
+  position: absolute;
+  top: 94px;
+  right: 320px;
+
+}
+
+div#wrap header nav ul.circle li:nth-child(3):hover {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 92px;
+  right: 318px;
+}
+
+div#wrap header nav ul.circle li:nth-child(4) {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #5A6BEA;
+  position: absolute;
+  top: 94px;
+  right: 260px;
+
+}
+
+div#wrap header nav ul.circle li:nth-child(4):hover {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 92px;
+  right: 258px;
+}
+
+/* 메뉴(이미지) */
+div#wrap header nav ul.menu_img li img {
+  width: 30px;
+  height: 30px;
+}
+
+div#wrap header nav ul.menu_img li img:hover {
+  width: 40px;
+  height: 40px;
+}
+
+div#wrap header nav ul.menu_img li:nth-child(1) {
+  position: absolute;
+  top: 40px;
+  right: 432px;
+}
+
+div#wrap header nav ul.menu_img li.pro img {
+  position: absolute;
+  top: 38px;
+  right: 368px;
+  width: 40px;
+  height: 40px;
+}
+
+div#wrap header nav ul.menu_img li:nth-child(3) {
+  position: absolute;
+  top: 43px;
+  right: 312px;
+}
+
+div#wrap header nav ul.menu_img li:nth-child(4) {
+  position: absolute;
+  top: 40px;
+  right: 252px;
+}
+
+div#wrap header nav ul.menu_img li:nth-child(5) {
+  position: absolute;
+  top: 40px;
+  right: 222px;
+}
+
+section {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+section article.content dl {
+  position: relative;
+  margin-top: -200px;
+}
+
+section article.content dl dt {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgb(15, 189, 216, .7);
+  color: #fff;
+  float: left;
+  font-family: 'Raleway';
+  cursor: pointer;
+  outline: 1px solid black;
+}
+
+section article.content dl dt.on {
+  background-color: rgb(37, 234, 163, .7);
+  font-weight: bold;
+}
+
+
+section article.content dl dd {
+  width: 1300px;
+  height: 550px;
+  background: radial-gradient(ellipse at bottom, rgba(27, 39, 53,.8) 0%, rgba(9, 10, 15,.8) 100%) ;
+  margin-left: 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  color: #fff;
+  
+}
+
+section article.content div.about_me img {
+  width: 420px;
+  height: 420px;
+  margin: 50px 80px;
+  opacity: .9;
+  float: left;
+  
+}
+
+section article.content div.about_me table {
+  width: 540px;
+  height: 450px;
+  margin-left: 650px;
+  padding-top: 40px;
+  font-family: 'Noto Sans KR';
+  font-size: 16px;
+}
+
+section article.content div.about_me table th {
+  color: #fff;
+  text-align: left;
+}
+
+section article.content div.about_me table td {
+  color: #fff;
+  text-align: left;
+  padding-left: 40px;
+}
+
+section article.content dl dd.hidden {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  display: none;
+}
+
+section article.content div.skills {
+  margin-top: -30px;
+}
+
+section article.content div.skills div.programming h3 {
+  color: #fff;
+  font-family: 'Raleway';
+  padding: 30px;
+  font-size: 16px;
+}
+
+section article.content div.skills div.programming ul li {
+  margin-top: -20px;
+  float: left;
+}
+
+section article.content div.skills div.programming ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+section article.content div.skills div.programming ul img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+section article.content div.skills div.design {
+  margin-top: 100px;
+}
+
+section article.content div.skills div.design h3 {
+  color: #fff;
+  font-family: 'Raleway';
+  padding: 30px;
+  font-size: 16px;
+}
+
+section article.content div.skills div.design ul li {
+  margin-top: -20px;
+  float: left;
+}
+
+section article.content div.skills div.design ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+section article.content div.skills div.design ul img {
+  width: 50px;
+  height: 50px;
+}
+
+section article.content div.skills div.design ul img {
+  width: 50px;
+  height: 50px;
+}
+
+section article.content div.skills div.design ul li {
+  margin-top: -20px;
+  float: left;
+}
+
+section article.content div.skills div.design ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+section article.content div.skills div.video_edit {
+  margin-top: 100px;
+}
+
+section article.content div.skills div.video_edit h3 {
+  color: #fff;
+  font-family: 'Raleway';
+  padding: 30px;
+  font-size: 16px;
+}
+
+section article.content div.skills div.video_edit ul li {
+  margin-top: -20px;
+  float: left;
+}
+
+section article.content div.skills div.video_edit ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+section article.content div.skills div.video_edit ul img {
+  width: 50px;
+  height: 50px;
+}
+
+section article.content div.skills div.office {
+  margin-left: 550px;
+  margin-top: -472px;
+  float: left;
+}
+
+section article.content div.skills div.office h3 {
+  color: #fff;
+  font-family: 'Raleway';
+  padding: 30px;
+  font-size: 16px;
+}
+
+section article.content div.skills div.office ul li {
+  margin-top: -20px;
+  float: left;
+}
+
+section article.content div.skills div.office ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+section article.content div.skills div.office ul img {
+  width: 50px;
+  height: 50px;
+}
+
+section article.content div.skills div.others {
+  margin-left: 550px;
+  margin-top: -300px;
+  float: left;
+}
+
+section article.content div.skills div.others h3 {
+  color: #fff;
+  font-family: 'Raleway';
+  padding: 30px;
+  font-size: 16px;
+}
+
+section article.content div.skills div.others ul li {
+  margin-top: -20px;
+  float: left;
+}
+
+section article.content div.skills div.others ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+section article.content div.skills div.others ul img {
+  width: 50px;
+  height: 50px;
+}
+
+section article.content div.skills div.langueges {
+  margin-left: 550px;
+  margin-top: -120px;
+  float: left;
+}
+
+section article.content div.skills div.langueges h3 {
+  color: #fff;
+  font-family: 'Raleway';
+  padding: 30px;
+  font-size: 16px;
+}
+
+section article.content div.skills div.langueges ul li {
+  margin-top: -20px;
+  float: left;
+}
+
+section article.content div.skills div.langueges ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+section article.content div.skills div.langueges ul img {
+  width: 50px;
+  height: 50px;
+}
+
+div.programming ul li:nth-child(1):hover:after {
+  content: "HTML: 대부분의 화면구현이 가능하고 다소 복잡한 기능은 인터넷 검색을 통해 구현 가능";
+  position: absolute;
+  top: 26%;
+  left: 2%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.programming ul li:nth-child(2):hover:after {
+  content: "CSS: 대부분의 화면구현이 가능하고 다소 복잡한 기능은 인터넷 검색을 통해 구현 가능";
+  position: absolute;
+  top: 26%;
+  left: 2%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.programming ul li:nth-child(3):hover:after {
+  content: "Java Script: 기본적인 문법을 숙지하고 있으며 웹페이지에 필요한 동작 구현이 가능";
+  position: absolute;
+  top: 26%;
+  left: 2%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.programming ul li:nth-child(4):hover:after {
+  content: "Python: 기본적인 문법을 숙지하고 있으며 간단한 게시판을 작성 가능";
+  position: absolute;
+  top: 26%;
+  left: 2%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.programming ul li:nth-child(5):hover:after {
+  content: "PHP: 기본적인 문법을 숙지하고 있으며 간단한 폼을 작성 가능";
+  position: absolute;
+  top: 26%;
+  left: 2%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.programming ul li:nth-child(6):hover:after {
+  content: "Jquery: 기본적인 문법을 숙지하고 있으며 웹페이지에 필요한 동작 구현이 가능";
+  position: absolute;
+  top: 26%;
+  left: 2%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.programming ul li:nth-child(7):hover:after {
+  content: "Sass: 기본적인 문법을 숙지하고 있음";
+  position: absolute;
+  top: 26%;
+  left: 2%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.design ul li:nth-child(1):hover:after {
+  content: "Adobe Photoshop: 사진 편집 및 보정이 가능하며 배너 및 팝업을 제작 가능";
+  position: absolute;
+  top: 60%;
+  left: 2%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.design ul li:nth-child(2):hover:after {
+  content: "Adobe Illustrator: 일러스트를 그릴 수 있으며 배너 및 팝업을 제작 가능";
+  position: absolute;
+  top: 60%;
+  left: 2%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.design ul li:nth-child(3):hover:after {
+  content: "Adobe Indesign: 기본적인 문서 작성이 가능";
+  position: absolute;
+  top: 60%;
+  left: 2%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.design ul li:nth-child(4):hover:after {
+  content: "Adobe XD: 웹페이지를 디자인 할 수 있으며 인터랙션 효과를 적용 가능";
+  position: absolute;
+  top: 60%;
+  left: 2%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.video_edit ul li:nth-child(1):hover:after {
+  content: "Adobe Premiere Pro : 기본적인 컷편집 및 자막 편집이 가능";
+  position: absolute;
+  top: 85%;
+  left: 18%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.video_edit ul li:nth-child(2):hover:after {
+  content: "Adobe After Effects: 기본적인 효과를 적용 가능";
+  position: absolute;
+  top: 85%;
+  left: 18%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.office ul li:nth-child(1):hover:after {
+  content: "MS Word: 대부분의 문서작성이 가능";
+  position: absolute;
+  top: 26%;
+  left: 57%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.office ul li:nth-child(2):hover:after {
+  content: "MS Excel: 기본적인 문서작성과 함수 사용이 가능";
+  position: absolute;
+  top: 26%;
+  left: 57%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.office ul li:nth-child(3):hover:after {
+  content: "MS Powerpoint: 대부분의 PPT 작성이 가능";
+  position: absolute;
+  top: 26%;
+  left: 57%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.others ul li:nth-child(1):hover:after {
+  content: "Blender: 기본적인 3D 모델링이 가능 ";
+  position: absolute;
+  top: 60%;
+  left: 57%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.others ul li:nth-child(2):hover:after {
+  content: "Unity: 기본적인 게임 애니메이션을 구현 가능";
+  position: absolute;
+  top: 60%;
+  left: 57%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.langueges ul li:nth-child(1):hover:after {
+  content: "일본어: 전문적인 통번역이 가능";
+  position: absolute;
+  top: 85%;
+  left: 75%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.langueges ul li:nth-child(2):hover:after {
+  content: "영어: 기본적인 회화와 작문이 가능";
+  position: absolute;
+  top: 85%;
+  left: 75%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
+
+div.langueges ul li:nth-child(3):hover:after {
+  content: "중국어: 기초회화가 가능";
+  position: absolute;
+  top: 85%;
+  left: 75%;
+  outline: 1px double #7752F3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  z-index: 100;
+  padding: 5px;
+}
